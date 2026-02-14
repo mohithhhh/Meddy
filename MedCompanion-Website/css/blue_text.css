@@ -1,0 +1,8 @@
+/* Blue text style for "Stay on track" */
+.blue-text {
+    background: linear-gradient(135deg, #0A84FF 0%, #0066CC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}

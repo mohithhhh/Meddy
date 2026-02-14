@@ -1,0 +1,32 @@
+/* Fix for scroll blur issue - Proper z-index stacking */
+
+/* Ensure all content is above background layers */
+.container,
+.hero,
+.nav,
+section,
+.features,
+.pricing,
+.cta {
+    position: relative;
+    z-index: 10;
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Fix background layers to stay behind */
+body::before,
+body::after {
+    z-index: -1 !important;
+    will-change: auto;
+}
+
+/* Prevent backdrop-filter from affecting scrolled content */
+.glass-card,
+.nav {
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}

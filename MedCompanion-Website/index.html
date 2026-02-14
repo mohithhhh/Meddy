@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCompanion - Your Medication Clarity Companion</title>
+    <meta name="description"
+        content="Understand your medicines, remember why you take them, and never miss a dose. MedCompanion is your AI-powered medication companion with photo pill recognition.">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/background_update.css?v=2">
+    <link rel="stylesheet" href="css/scroll_fix.css?v=1">
+    <link rel="stylesheet" href="css/phone_mockup_dark.css?v=999">
+    <link rel="stylesheet" href="css/blue_text.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav glass-card">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none">
+                    <rect x="12" y="4" width="8" height="24" rx="4" fill="url(#pillGradient)" />
+                    <rect x="4" y="12" width="24" height="8" rx="4" fill="url(#pillGradient)" />
+                    <defs>
+                        <linearGradient id="pillGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#0A84FF" />
+                            <stop offset="100%" style="stop-color:#30D158" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">MedCompanion</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#photo-recognition">Photo Recognition</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#download" class="btn btn-primary">Download App</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Understand. Remember. <br>
+                        <span class="blue-text">Stay on track.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Your AI-powered medication companion with photo pill recognition.
+                        Simply snap a photo of your medicine, get instant information, and chat with AI for personalized
+                        guidance.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary btn-large">
+                            <span>Download for iOS</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 14L5 9L6.41 7.59L9 10.17V2H11V10.17L13.59 7.59L15 9L10 14Z"
+                                    fill="currentColor" />
+                                <path d="M18 16V18H2V16H18Z" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#photo-recognition" class="btn btn-secondary btn-large">
+                            Try Photo Recognition
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="phone-mockup glass-card">
+                        <div class="phone-screen">
+                            <div class="app-preview">
+                                <div class="preview-header">
+                                    <div class="time">9:41</div>
+                                    <div class="status-icons">
+                                        <svg width="16" height="16">
+                                            <rect width="16" height="16" fill="#4A90E2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="preview-content">
+                                    <h3>Good morning</h3>
+                                    <p class="date">Wednesday, Feb 12</p>
+
+                                    <div class="progress-card glass-card-inner">
+                                        <div class="progress-ring">
+                                            <svg width="80" height="80">
+                                                <circle cx="40" cy="40" r="35" stroke="#E8F4F8" stroke-width="6"
+                                                    fill="none" />
+                                                <circle cx="40" cy="40" r="35" stroke="url(#gradient)" stroke-width="6"
+                                                    fill="none" stroke-dasharray="220" stroke-dashoffset="33"
+                                                    stroke-linecap="round" transform="rotate(-90 40 40)" />
+                                                <defs>
+                                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                        <stop offset="0%" style="stop-color:#4A90E2" />
+                                                        <stop offset="100%" style="stop-color:#48BB78" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <div class="progress-text">85%</div>
+                                        </div>
+                                        <div class="progress-info">
+                                            <div class="progress-title">Today's Plan</div>
+                                            <div class="progress-subtitle">3 medications</div>
+                                            <div class="progress-detail">2 taken • 1 due</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="medication-card glass-card-inner">
+                                        <div class="med-icon">✓</div>
+                                        <div class="med-info">
+                                            <div class="med-name">Metformin</div>
+                                            <div class="med-dose">500mg</div>
+                                            <div class="med-reason">To control my blood sugar</div>
+                                        </div>
+                                        <div class="med-time">8:00 AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Chat Interface Mockup -->
+                    <div class="chat-mockup glass-card">
+                        <div class="chat-mockup-header">
+                            <h4>AI Assistant</h4>
+                            <span class="status-dot"></span>
+                        </div>
+                        <div class="chat-mockup-messages">
+                            <div class="chat-bubble ai-bubble">
+                                <p>I've identified your medication!</p>
+                                <p><strong>Metformin 500mg</strong></p>
+                                <p class="chat-detail">Used to control blood sugar levels in type 2 diabetes.</p>
+                            </div>
+                            <div class="chat-bubble user-bubble">
+                                What are the side effects?
+                            </div>
+                            <div class="chat-bubble ai-bubble">
+                                <p>Common side effects include:</p>
+                                <p class="chat-detail">• Nausea or stomach upset<br>• Diarrhea<br>• Metallic taste</p>
+                                <p class="chat-note">Take with food to reduce stomach upset.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Recognition Feature -->
+    <section id="photo-recognition" class="photo-recognition">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Photo Pill Recognition</h2>
+                <p class="section-subtitle">Snap a photo, get instant information, chat with AI</p>
+            </div>
+
+            <div class="photo-demo glass-card">
+                <div class="photo-demo-grid">
+                    <div class="photo-upload-area">
+                        <div class="upload-zone glass-card-inner" id="uploadZone">
+                            <svg class="upload-icon" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                <path d="M32 8L32 40M32 8L20 20M32 8L44 20" stroke="url(#uploadGradient)"
+                                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="8" y="44" width="48" height="12" rx="6" stroke="url(#uploadGradient)"
+                                    stroke-width="4" fill="none" />
+                                <defs>
+                                    <linearGradient id="uploadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4A90E2" />
+                                        <stop offset="100%" style="stop-color:#48BB78" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <h3>Upload or Capture Photo</h3>
+                            <p>Drop an image here or click to browse</p>
+                            <input type="file" id="fileInput" accept="image/*" hidden>
+                            <button class="btn btn-primary" onclick="document.getElementById('fileInput').click()">
+                                Choose Image
+                            </button>
+                        </div>
+                        <div class="photo-preview hidden" id="photoPreview">
+                            <img id="previewImage" alt="Uploaded pill">
+                            <button class="btn btn-secondary btn-small" onclick="resetUpload()">Try Another</button>
+                        </div>
+                    </div>
+
+                    <div class="ai-chat-area">
+                        <div class="chat-container glass-card-inner">
+                            <div class="chat-header">
+                                <h3>AI Assistant</h3>
+                                <span class="status-indicator"></span>
+                            </div>
+                            <div class="chat-messages" id="chatMessages">
+                                <div class="chat-message ai-message">
+                                    <div class="message-content">
+                                        Hello! Upload a photo of your medication, and I'll help you identify it and
+                                        answer any questions you have.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input-area">
+                                <input type="text" id="chatInput" placeholder="Ask me anything about your medication..."
+                                    class="chat-input">
+                                <button class="btn btn-primary btn-icon" onclick="sendMessage()">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2 10L18 2L10 18L8 11L2 10Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Everything you need to stay on track</h2>
+                <p class="section-subtitle">MedCompanion combines AI intelligence with thoughtful design to help you
+                    manage your medications</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="20" stroke="url(#iconGradient1)" stroke-width="3" />
+                        <path d="M24 14V24L30 30" stroke="url(#iconGradient1)" stroke-width="3"
+                            stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="iconGradient1">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Photo Recognition</h3>
+                    <p class="feature-description">
+                        Snap a photo of any pill and instantly identify it. Our AI recognizes medications
+                        by shape, color, and imprint for accurate identification.
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M24 8C15 8 8 15 8 24C8 33 15 40 24 40C33 40 40 33 40 24" stroke="url(#iconGradient2)"
+                            stroke-width="3" stroke-linecap="round" />
+                        <circle cx="24" cy="24" r="8" fill="url(#iconGradient2)" />
+                        <defs>
+                            <linearGradient id="iconGradient2">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Conversational AI</h3>
+                    <p class="feature-description">
+                        Chat naturally with our AI about your medications. Ask about side effects,
+                        interactions, timing, and get instant, guard-railed responses.
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="8" y="12" width="32" height="28" rx="4" stroke="url(#iconGradient3)"
+                            stroke-width="3" />
+                        <path d="M16 20H32M16 28H24" stroke="url(#iconGradient3)" stroke-width="3"
+                            stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="iconGradient3">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Personal Memory</h3>
+                    <p class="feature-description">
+                        Document why you take each medicine in your own words.
+                        Your personal context makes reminders meaningful and motivating.
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="12" stroke="url(#iconGradient4)" stroke-width="3" />
+                        <path d="M24 18V24L28 28" stroke="url(#iconGradient4)" stroke-width="3"
+                            stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="iconGradient4">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Smart Reminders</h3>
+                    <p class="feature-description">
+                        Context-aware notifications that include your personal reason.
+                        "After food", "before sleep" - we remember the details that matter.
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M8 32L16 24L24 28L40 12" stroke="url(#iconGradient5)" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="16" cy="24" r="3" fill="url(#iconGradient5)" />
+                        <circle cx="24" cy="28" r="3" fill="url(#iconGradient5)" />
+                        <defs>
+                            <linearGradient id="iconGradient5">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Progress Tracking</h3>
+                    <p class="feature-description">
+                        Beautiful visualizations of your adherence. Weekly summaries
+                        with encouraging messages, never judgmental.
+                    </p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <svg class="feature-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="18" cy="18" r="8" stroke="url(#iconGradient6)" stroke-width="3" />
+                        <circle cx="30" cy="30" r="8" stroke="url(#iconGradient6)" stroke-width="3" />
+                        <path d="M24 18L26 30" stroke="url(#iconGradient6)" stroke-width="3" stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="iconGradient6">
+                                <stop offset="0%" stop-color="#4A90E2" />
+                                <stop offset="100%" stop-color="#48BB78" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <h3 class="feature-title">Caregiver Mode</h3>
+                    <p class="feature-description">
+                        Share access with family. They get missed-dose alerts and
+                        weekly summaries. Peace of mind for everyone.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple to use, powerful results</h2>
+                <p class="section-subtitle">Get started in less than 2 minutes</p>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number glass-card">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Snap a Photo</h3>
+                        <p class="step-description">
+                            Take a photo of your medication or upload from your gallery.
+                            Our AI instantly identifies the pill and provides detailed information.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number glass-card">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Chat with AI</h3>
+                        <p class="step-description">
+                            Ask questions naturally. "What are the side effects?" "Can I take this with food?"
+                            Get instant, safe, guard-railed answers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number glass-card">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Add Personal Context</h3>
+                        <p class="step-description">
+                            Document why you're taking it in your own words. This personal reason
+                            appears in every reminder, making them meaningful.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number glass-card">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Stay on Track</h3>
+                        <p class="step-description">
+                            Receive smart reminders, track your adherence, and chat with AI
+                            whenever you have questions. Your health journey, simplified.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you need more</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Free</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$0</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Up to 3 medications</li>
+                        <li>✓ Basic reminders</li>
+                        <li>✓ Limited AI chat (10/month)</li>
+                        <li>✓ Photo recognition (5/month)</li>
+                        <li>✓ Timeline view</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-block">Get Started</a>
+                </div>
+
+                <div class="pricing-card glass-card pricing-featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$4.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited medications</li>
+                        <li>✓ Unlimited AI chat</li>
+                        <li>✓ Unlimited photo recognition</li>
+                        <li>✓ Advanced analytics</li>
+                        <li>✓ Export for doctor visits</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary btn-block">Start Free Trial</a>
+                </div>
+
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-title">Premium Plus</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">$9.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Everything in Premium</li>
+                        <li>✓ Caregiver mode (3 caregivers)</li>
+                        <li>✓ Weekly AI summaries</li>
+                        <li>✓ Interaction warnings</li>
+                        <li>✓ Batch photo recognition</li>
+                        <li>✓ Priority AI responses</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary btn-block">Start Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently asked questions</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">How accurate is the photo recognition?</h3>
+                    <p class="faq-answer">
+                        Our AI achieves 95%+ accuracy in identifying pills by analyzing shape, color,
+                        imprint, and size. However, always verify with your pharmacist or prescription
+                        label for absolute certainty.
+                    </p>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">Is this a replacement for my doctor?</h3>
+                    <p class="faq-answer">
+                        No. MedCompanion is educational support only. We help you understand
+                        and remember your medications, but we never provide medical advice.
+                        Always consult your healthcare provider for medical decisions.
+                    </p>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">How does the AI chat work?</h3>
+                    <p class="faq-answer">
+                        Our AI is guard-railed to only answer safe questions about medication
+                        information, side effects, and instructions. It refuses dangerous queries
+                        like dosage changes and redirects you to your doctor.
+                    </p>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">Is my health data secure?</h3>
+                    <p class="faq-answer">
+                        Yes. All data is encrypted at rest and in transit. We're HIPAA-compliant
+                        and never share your information with third parties. Your privacy is our priority.
+                    </p>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">Can I use this for multiple people?</h3>
+                    <p class="faq-answer">
+                        With Premium Plus, you can enable Caregiver Mode to manage medications
+                        for family members. Caregivers get alerts and summaries while maintaining privacy.
+                    </p>
+                </div>
+
+                <div class="faq-item glass-card">
+                    <h3 class="faq-question">Does it work offline?</h3>
+                    <p class="faq-answer">
+                        Basic features like reminders and viewing your medication list work offline.
+                        Photo recognition and AI chat require an internet connection for real-time analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="cta">
+        <div class="container">
+            <div class="cta-content glass-card">
+                <h2 class="cta-title">Ready to take control of your medications?</h2>
+                <p class="cta-subtitle">
+                    Join thousands of people who've improved their medication adherence with MedCompanion
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <span>Download on the App Store</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="cta-note">Free to download • No credit card required</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="12" y="4" width="8" height="24" rx="4" fill="url(#pillGradient2)" />
+                            <rect x="4" y="12" width="24" height="8" rx="4" fill="url(#pillGradient2)" />
+                            <defs>
+                                <linearGradient id="pillGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4A90E2" />
+                                    <stop offset="100%" style="stop-color:#48BB78" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">MedCompanion</span>
+                    </div>
+                    <p class="footer-tagline">Understand. Remember. Stay on track.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#photo-recognition">Photo Recognition</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Medical Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MedCompanion. All rights reserved.</p>
+                <p class="footer-disclaimer">
+                    This app does not provide medical advice. Always consult your healthcare provider.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/photo-recognition.js"></script>
+</body>
+
+</html>

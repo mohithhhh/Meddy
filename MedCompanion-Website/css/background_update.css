@@ -1,0 +1,18 @@
+/* Medical background image - Doctor with Phone - MORE VISIBLE */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(135deg, rgba(10, 22, 40, 0.5) 0%, rgba(26, 35, 50, 0.4) 100%),
+        url('../doctor_background.png') center/cover no-repeat !important;
+    background-size: cover;
+    background-position: center;
+    filter: blur(40px) brightness(0.8);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+}

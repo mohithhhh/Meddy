@@ -1,0 +1,113 @@
+/* Match left phone mockup to right AI chat mockup EXACTLY - iOS 26 Dark Style */
+
+/* Make phone mockup look solid and grounded like chat mockup */
+.phone-mockup {
+    background: rgba(40, 45, 65, 0.6) !important;
+    backdrop-filter: blur(40px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5) !important,
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Dark screen background matching chat mockup */
+.phone-screen {
+    background: linear-gradient(135deg,
+            rgba(35, 38, 55, 0.98) 0%,
+            rgba(42, 45, 65, 0.98) 50%,
+            rgba(38, 41, 60, 0.98) 100%) !important;
+    border-radius: 32px !important;
+}
+
+/* White text like chat mockup */
+.preview-content h3 {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    font-size: 2rem !important;
+}
+
+.preview-content .date {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Dark cards with subtle borders like chat bubbles */
+.progress-card {
+    background: rgba(55, 65, 95, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 24px !important;
+    padding: 20px !important;
+}
+
+.progress-title {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+}
+
+.progress-subtitle {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.progress-detail {
+    color: #0A84FF !important;
+}
+
+.progress-text {
+    color: #0A84FF !important;
+    font-weight: 700 !important;
+    font-size: 1.75rem !important;
+}
+
+/* Medication card matching chat bubble style */
+.medication-card {
+    background: rgba(55, 65, 95, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 24px !important;
+    padding: 20px !important;
+}
+
+.med-name {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+}
+
+.med-dose {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.med-reason {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-style: italic !important;
+    font-size: 0.9rem !important;
+}
+
+.med-time {
+    color: #0A84FF !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+.med-icon {
+    background: linear-gradient(135deg, #30D158 0%, #28A745 100%) !important;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+/* Update progress ring colors */
+.progress-ring svg circle:first-child {
+    stroke: rgba(255, 255, 255, 0.15) !important;
+}
+
+.progress-ring svg circle:last-child {
+    stroke: #0A84FF !important;
+}
+
+/* Remove floating effect - make it solid */
+.phone-mockup:hover {
+    transform: translateY(-4px) scale(1.01) !important;
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.6) !important,
+        inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
